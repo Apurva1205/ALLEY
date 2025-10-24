@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lab Alley – Final Answers & Pitch — Apurva Chavan</title>
+  <style>
+  :root{
+    --bg:#f7f8fb;--ink:#0f172a;--muted:#475569;--panel:#ffffff;--line:#e5e7eb;--radius:16px;
+    --g1:#7c3aed;--g2:#06b6d4;--g3:#22c55e;--g4:#f59e0b;--g5:#ef4444
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:radial-gradient(1200px 700px at -10% -20%, #eef2ff 0%, transparent 55%),
+       radial-gradient(1200px 700px at 110% -20%, #ecfeff 0%, transparent 55%),
+       linear-gradient(180deg,#f9fafb,#f7f8fb);color:var(--ink);
+       font:15px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial}
+  a{color:#0ea5e9;text-decoration:none}a:hover{text-decoration:underline}
+
+  /* Hero */
+  header{background:linear-gradient(120deg,var(--g1),var(--g2),var(--g3),var(--g4),var(--g5));
+         color:#fff;border-bottom:1px solid #00000022}
+  .wrap{max-width:1180px;margin:0 auto;padding:28px 20px}
+  h1{margin:0;font-size:28px;letter-spacing:.2px}
+  .sub{opacity:.9;margin-top:6px}
+
+  /* Shell layout */
+  main{max-width:1180px;margin:20px auto 48px;padding:0 20px}
+  .shell{display:grid;grid-template-columns:320px 1fr;gap:20px}
+  @media (max-width:980px){.shell{grid-template-columns:1fr}}
+
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+        box-shadow:0 12px 28px rgba(2,6,23,.06)}
+  .card h2{margin:0;padding:16px 16px 0;font-size:16px}
+  .content{padding:16px}
+
+  /* Profile */
+  .profile-card{position:sticky;top:18px;align-self:start}
+  .avatar{width:84px;height:84px;border-radius:50%;display:grid;place-items:center;font-weight:800;font-size:22px;color:#0b0d13;
+          background:conic-gradient(from 200deg,var(--g1),var(--g2),var(--g3),var(--g4),var(--g5),var(--g1));
+          box-shadow:0 0 0 4px #ffffff, 0 0 0 6px #0000000f}
+  .rowflex{display:flex;gap:8px;align-items:center}
+  .muted{color:var(--muted)}
+  .pillset{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+  .pill{display:inline-flex;align-items:center;gap:6px;padding:6px 10px;border-radius:999px;border:1px solid var(--line);
+        background:linear-gradient(180deg,#ffffff,#fafafa);font-size:12px;color:#0f172a}
+
+  /* Stack on the right */
+  .stack{display:grid;gap:20px}
+
+  /* Pitch */
+  .list{margin:0;padding-left:18px}
+  .list li{margin:6px 0}
+  .kpi{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:8px}
+  .kpi .mini{background:linear-gradient(180deg,#ffffff,#fbfbfb);border:1px solid var(--line);border-radius:12px;padding:12px}
+  .mini .t{font-size:11px;color:#64748b;text-transform:uppercase;letter-spacing:.6px}
+  .mini .v{font-weight:800;margin-top:4px}
+
+  /* Answers block */
+  .preview{white-space:pre-wrap;background:linear-gradient(180deg,#ffffff,#fafafa);border:1px dashed #cbd5e1;padding:16px;border-radius:12px;min-height:260px;
+           font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+  /* Attractive Q&A styling */
+  .small{font-size:12px}
+  .qa{display:grid;gap:12px;grid-template-columns:1fr 1fr}
+  @media (max-width:980px){.qa{grid-template-columns:1fr}}
+  .qa-item{position:relative;background:linear-gradient(180deg,#ffffff,#fafafa);border:1px solid var(--line);border-radius:14px;padding:14px;box-shadow:0 6px 20px rgba(2,6,23,.05)}
+  .qa-item:before{content:"";position:absolute;left:-1px;top:-1px;bottom:-1px;width:6px;border-radius:14px 0 0 14px;background:linear-gradient(180deg,var(--g2),var(--g3),var(--g4))}
+  .qa-item .label{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.6px;margin-bottom:6px}
+  .qa-item .answer{font-weight:800;line-height:1.5;color:var(--ink)}
+  .qa-item .answer .sub{font-weight:600;color:var(--ink)}
+  .tight{margin:6px 0 0 18px}
+  .tight li{margin:4px 0}
+</style>
+</head>
+<body>
+  <header>
+  <div class="wrap">
+    <h1>Lab Alley — Final Answers & 90‑Day Pitch</h1>
+    <div class="sub">Apurva Ravikar Chavan · Python · ML · Data Science · Portfolio & repos below</div>
+  </div>
+</header>
+
+  <main>
+  <div class="shell">
+    <!-- Left: Profile -->
+    <aside class="card profile-card">
+      <div class="content">
+        <div class="rowflex">
+          
+          <div>
+            <div style="font-weight:800;font-size:18px">Apurva Ravikar Chavan</div>
+            <div class="muted">M.S. Data Science — May 2025</div>
+            <div class="muted">F‑1 OPT through July 2026 · STEM OPT through July 2028 (planned) · PhD after STEM (no employer sponsorship)</div>
+          </div>
+        </div>
+        <div class="pillset">
+          <span class="pill">📊 Advanced Excel</span>
+          <span class="pill">🧮 SQL</span>
+          <span class="pill">📈 Tableau / Power BI</span>
+          <span class="pill">🐍 Python (pandas, sklearn)</span>
+          <span class="pill">🧭 GA/GA4 · BigQuery</span>
+          <span class="pill">⚙️ ETL · A/B Testing</span>
+        </div>
+        <div style="margin-top:10px">
+          <div class="muted">Links</div>
+          <div class="pillset">
+            <a class="pill" href="https://github.com/Apurva1205" target="_blank">GitHub ↗</a>
+            <a class="pill" href="https://apurva1205.github.io" target="_blank">Portfolio ↗</a>
+            <a class="pill" href="https://github.com/Apurva1205/Sales-Ad-Optimization" target="_blank">ROAS Dashboard ↗</a>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Right: Pitch then Answers -->
+    <section class="stack">
+      <section class="card">
+        <h2>Idea Pitch — How I’ll Help Lab Alley</h2>
+        <div class="content">
+          <p class="muted">A focused 90‑day plan to tighten data integrity, accelerate insights, and grow revenue.</p>
+          <ul class="list">
+            <li><b>Single Source of Truth (SSOT):</b> Map flows between e‑commerce, Zoho CRM/Campaigns, payments, and shipping. Produce ERD + lineage; define input controls for customer & product master data.</li>
+            <li><b>Revenue Dashboards:</b> Build ROAS/CPA · CAC/LTV · Conversion & AOV views. Add cohort retention and merchandising drill‑downs for quick wins.</li>
+            <li><b>Funnel Optimization:</b> Instrument browse → cart → checkout → purchase; quantify step drop‑offs. Launch 2–3 high‑impact A/B tests (shipping estimator on cart, trust cues, CTA placement).</li>
+            <li><b>Zoho CRM Lift:</b> Unify lead + customer records, define lifecycle stages, connect campaigns to revenue. Automate weekly KPI email.
+            </li>
+            <li><b>AI Task Force:</b> Prototype <i>Fin AI</i> use cases: bundle recommender, anomaly alerts for conversion/AOV, lead‑scoring from CRM notes with lightweight NLP.</li>
+          </ul>
+          <div class="kpi">
+            <div class="mini"><div class="t">0–30 Days</div><div class="v">Audit · Baseline KPIs · SSOT sketch</div></div>
+            <div class="mini"><div class="t">31–60 Days</div><div class="v">Dashboards · Funnel drops · 2 A/Bs</div></div>
+            <div class="mini"><div class="t">61–90 Days</div><div class="v">LTV model · CRM tie‑out · AI POC</div></div>
+          </div>
+          <p class="muted" style="margin-top:10px">Deliverables: ERD & lineage, KPI dictionary, Tableau/Power BI dashboards, A/B test plan & readouts, CRM attribution, AI POC demo.</p>
+        </div>
+      </section>
+
+      <section class="card">
+  <h2>Final Answers — Paste into the Lab Alley form</h2>
+  <div class="content">
+    <p class="muted small">Tip: copy each answer beneath the question into the application fields.</p>
+    <div class="qa">
+      <div class="qa-item">
+        <div class="label">📫 Would you like to receive email notifications about new jobs from Lab Alley?</div>
+        <div class="answer">Yes</div>
+      </div>
+      <div class="qa-item">
+        <div class="label">⏱️ Do you have 2+ years of experience in data analysis within eCommerce?</div>
+        <div class="answer">No</div>
+      </div>
+      <div class="qa-item" style="grid-column:1/-1">
+        <div class="label">🧩 Please describe your 2 most significant eCommerce data projects (platform/tool + key outcome)</div>
+        <div class="answer">
+          <div class="sub">1) Sales Ad Optimization — Python, SQL, Tableau</div>
+          <ul class="tight">
+            <li>Built a ROAS/CPA dashboard connecting ad spend to purchases using cleaned order and campaign data.</li>
+            <li>Identified low‑efficiency ad groups; recommended budget reallocation and creative A/B tests.</li>
+            <li>Delivered a tidy data model and reusable weekly review queries.</li>
+            <li>Repo: https://github.com/Apurva1205/Sales-Ad-Optimization</li>
+          </ul>
+          <div class="sub" style="margin-top:8px">2) Funnel & Cohort Retention Analysis — GA/GA4 → BigQuery/SQL; Tableau</div>
+          <ul class="tight">
+            <li>Mapped browse → add‑to‑cart → checkout → purchase; quantified drop‑offs at each step.</li>
+            <li>Built cohorts by first‑purchase month, UTM, and device to track repeat rate and AOV.</li>
+            <li>Prioritized UX experiments (shipping estimator on cart, CTA placement) to improve conversion.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="qa-item" style="grid-column:1/-1">
+        <div class="label">🚀 Share why this position is appealing to you</div>
+        <div class="answer">Lab Alley combines hands‑on eCommerce analytics with durable data models and real A/B testing. I enjoy owning KPIs (conversion, AOV, CAC/LTV), improving data integrity across systems, and turning complex funnels into clear dashboards and recommendations. I’m also excited to contribute to the AI Task Force and lead initiatives around Zoho CRM/Campaigns.</div>
+      </div>
+      <div class="qa-item">
+        <div class="label">🤖 Do you have a demonstrated curiosity in emerging AI for analytics & strategy?</div>
+        <div class="answer">Yes</div>
+      </div>
+      <div class="qa-item">
+        <div class="label">📍 Are you legally authorized to work in the U.S. full‑time, on an ongoing basis?</div>
+        <div class="answer">Yes</div>
+      </div>
+      <div class="qa-item" style="grid-column:1/-1">
+        <div class="label">📝 If you require sponsorship now or in the future, please specify</div>
+        <div class="answer">N/A — F‑1 OPT through July 2026; STEM OPT through July 2028 (planned). Planning to pursue a PhD after STEM OPT; not seeking employer sponsorship.</div>
+      </div>
+      <div class="qa-item">
+        <div class="label">📊 Rate your Excel experience</div>
+        <div class="answer">Advanced</div>
+      </div>
+      <div class="qa-item">
+        <div class="label">🧮 Are you proficient in SQL?</div>
+        <div class="answer">Yes</div>
+      </div>
+      <div class="qa-item" style="grid-column:1/-1">
+        <div class="label">🗺️ Understanding of data design, schemas, data flows/ETL, and storage best practices</div>
+        <div class="answer">Yes</div>
+      </div>
+    </div>
+  </div>
+</section>
+    </section>
+  </div>
+</main>
+
+  <footer>
+    Built for fast, fun, copy‑ready application responses. After copying, paste into the employer form and submit. ✨
+  </footer>
+
+  
+</body>
+</html>
